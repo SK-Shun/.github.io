@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>門司港</title>
+</head>
+<style type="text/css">
+h1 {
+  padding: 0.5em;/*文字周りの余白*/
+  color: #010101;/*文字色*/
+  background: #eaf3ff;/*背景色*/
+  border-bottom: solid 3px #516ab6;/*下線*/
+  text-align: center;
+}    
+h2 {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #333; /* 濃いグレーに変更 */
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 5px #7db4e6;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+  font-weight: bold;
+}
+h3 {
+  position: relative;
+  background: #eff4ff;
+  padding: 10px 10px 10px 60px;  /* 左に十分なスペースを確保 */
+  font-size: 20px;
+  color: #474747;
+  border-radius: 0 10px 10px 0;
+  overflow: hidden; /* はみ出し防止 */
+  margin: 10px 0;    /* 見た目調整 */
+}
+
+h3:before {
+  content: "✔";  /* チェックマークアイコン（Unicode） */
+  display: inline-block;
+  position: absolute;
+  left: 10px;   /* h3内に収まるよう左端から10px */
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  background: #81a1e4;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 2px #4967b4;
+  font-size: 20px;
+}
+p {
+  font-size: 1.5em;       /* 通常より少し大きめの文字サイズ */
+  line-height: 2.0;       /* 行間を広めにする（1.6〜1.8くらいがおすすめ） */
+  margin-bottom: 1em;     /* 下の余白も確保（必要に応じて） */ 
+}
+ul {
+  font-size: 1.5em;       /* 通常より少し大きめの文字サイズ */
+  line-height: 2.0;       /* 行間を広めにする（1.6〜1.8くらいがおすすめ） */
+  margin-bottom: 1em;     /* 下の余白も確保（必要に応じて） */
+}
+
+.table-container {
+  border-collapse: collapse;
+  width: 95%;
+  max-width: 800px;
+  margin: 30px auto;
+}
+.table-container  th,
+.table-container  td {
+  border: 2px solid #fff;
+  background-color: #f1f7ff;
+  padding: 1em;
+}
+.table-container thead th {
+  background-color: #347ab7;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  width: 20%;
+  min-width: 4em;
+}
+img {
+  display: block;            /* インラインからブロックに変更して中央揃えを可能に */
+  margin: 20px auto;         /* 左右中央揃え。上下に20pxの余白 */
+  width: 60%;             /* 画面サイズに応じて縮小される */
+  height: auto;              /* アスペクト比を保ったまま高さを自動調整 */
+  border-radius: 8px;        /* 角を少し丸めて見栄えよく（任意） */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 軽い影をつける（任意） */
+}
+.bg_pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fffff;
+  opacity: 0.4;
+  z-index: -1;
+}
+.Polka_v2 {
+  background-image:  radial-gradient(#ffc107 2px, transparent 2px), radial-gradient(#ffc107 2px, #ffffff 2px);
+  background-size: 40px 40px;
+  background-position: 0 0,20px 20px;
+}
+/*=============
+base
+==============*/
+</style>
+<body>
+  <div class="bg_pattern Polka_v2"></div>
+  <h1>門司港</h1>
+
+  <img src="https://github.com/sakufff/website/blob/main/mojiko/1114.jpeg?raw=true" alt="門司港の画像">
+
+  <p>
+  明治時代の開港以来、九州の玄関口として発展してきた門司港。関門海峡を望む立地は、交通・軍事の要衝としても知られ、対岸の下関とともに国防上も重要な位置を占めていました。<br>
+  戦前には陸軍の施設や物流拠点が置かれ、戦後も門司港駅を中心に物流の拠点として発展。現在は観光と文化の港として、多くの人々を惹きつけています。
+</p>
+
+<h2>現在の門司港</h2>
+
+<img src="https://github.com/sakufff/website/blob/main/mojiko/mojiko.jpg?raw=true" alt="現在の門司港の画像">
+
+<p>
+  かつては国際貿易や鉄道輸送の拠点としてにぎわいを見せた門司港。現在は、レトロな街並みを活かした観光地として生まれ変わり、全国から多くの観光客が訪れています。門司港レトロ地区では、旧門司税関や門司港駅など歴史的建造物が立ち並び、夜景やイベントも人気です。<br>
+  また、関門橋や関門トンネルを通じて山口県下関市とつながっており、地域間の交流の拠点にもなっています。地元グルメとして有名な焼きカレーやバナナの叩き売りなど、門司港ならではの文化も健在です。
+</p>
+
+<h2>門司港の歴史</h2>
+
+<div class="table-container">
+<table border="1">
+  <tr><th>年代</th><th>出来事</th></tr>
+  <tr><td>1889年</td><td>門司駅開業、鉄道輸送の拠点に</td></tr>
+  <tr><td>1899年</td><td>門司が特別輸出港に指定</td></tr>
+  <tr><td>1905年</td><td>関門連絡船が開通し、本州との連絡強化</td></tr>
+  <tr><td>1927年</td><td>門司港駅が現在の駅舎に</td></tr>
+  <tr><td>1942年</td><td>戦時中、陸軍施設・軍需拠点として活用</td></tr>
+  <tr><td>1963年</td><td>門司市が北九州市に合併</td></tr>
+  <tr><td>1995年</td><td>門司港レトロ地区として再開発・観光化が進む</td></tr>
+</table>
+</div>
+
+  <h2>特別輸出港としての発展</h2>
+  <p>
+    1889年（明治22年）11月に門司港が国の特別輸出港に指定されて以降、金融機関や商社・海運会社の支店が相次いで進出し、外国航路の拠点および貿易港として発展した。
+  </p>
+
+  <img src="https://github.com/sakufff/website/blob/main/mojiko/tokubetu.jpeg?raw=true" alt="代表的な艦の画像">
+
+  <ul>
+    <li>特別輸出の品目
+      <ul>
+        <li>米</li>
+        <li>麦</li>
+        <li>硫黄</li>
+        <li>石炭</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>見どころ</h2>
+
+<h3>① 旧門司税関</h3>
+<img src="https://github.com/sakufff/website/blob/main/mojiko/zeikan.jpg?raw=true" alt="旧門司税関の画像">
+<p>
+  1912年に建てられた赤レンガの建物。かつて実際に税関として使用されており、現在は観光案内所や展示室として活用されています。外観はイギリス積みの煉瓦造りで、尖塔やアーチ窓がレトロな雰囲気を醸し出しています。関門海峡を一望できる展望スペースも人気です。
+</p>
+
+<h3>② 門司港駅</h3>
+<img src="https://github.com/sakufff/website/blob/main/mojiko/mojikost.jpg?raw=true" alt="門司港駅の画像">
+<p>
+  1914年に完成した、現存する数少ないネオルネサンス様式の木造駅舎。国の重要文化財にも指定され、2019年に大規模な保存修理を経てリニューアルオープンしました。大正ロマンの雰囲気が漂い、映画やドラマのロケ地としても有名です。
+</p>
+
+<h3>③ 北九州市旧大阪商船</h3>
+<img src="https://github.com/sakufff/website/blob/main/mojiko/mojiosaka.jpg?raw=true" alt="旧大阪商船の画像">
+<p>
+  1917年に建てられた洋風建築で、当時は大阪商船の事務所として使用されていました。オレンジ色の煉瓦と丸いドーム屋根が特徴で、現在は1階がカフェ、2階が展示室になっています。門司港レトロの象徴的な建物のひとつです。
+</p>
+
+<h3>④ 関門海峡ミュージアム（海峡ドラマシップ）</h3>
+<img src="https://github.com/sakufff/website/blob/main/mojiko/kanmon_museum.jpg?raw=true" alt="関門海峡ミュージアムの画像">
+<p>
+  関門海峡の歴史や文化を紹介する体験型の博物館。実物大の船の展示や映像演出、ドラマ仕立ての展示コーナーがあり、子どもから大人まで楽しめます。最上階の展望室からは関門橋と海峡の絶景が楽しめます。
+</p>
+
+<h2>有名グルメ</h2>
+
+<h3>① 焼きカレー</h3>
+<img src="https://github.com/sakufff/website/blob/main/mojiko/mojigrume1.jpeg?raw=true" alt="焼きカレーの画像">
+<p>
+  門司港発祥のご当地グルメ。スパイスの効いたカレーに卵とチーズを乗せてオーブンで焼いた一皿で、観光客にも大人気。各店舗ごとに個性ある味が楽しめます。
+</p>
+
+<h3>② バナナの叩き売り</h3>
+<img src="https://github.com/sakufff/website/blob/main/mojiko/mojigrume3.jpg?raw=true" alt="バナナの叩き売りの画像">
+<p>
+  明治時代、門司港にバナナが輸入されたことに由来する名物。口上を披露しながら売る「叩き売り」は門司港の文化として今もイベントなどで披露されています。
+</p>
+
+<h3>③ 瓦そば</h3>
+<img src="https://github.com/sakufff/website/blob/main/mojiko/mojigrume2.jpg?raw=true" alt="関門だるまうどんの画像">
+<p>
+ 山口県下関市発祥の麺料理ですが、北九州でも家庭料理として愛されています。ゆでた茶そばをよく熱した瓦の上にのせ、その上に錦糸玉子、牛肉、のり、レモン、もみじおろしなどをトッピングして食べます。北九州で瓦そばを食べるなら、門司港レトロ地区にある「元祖瓦そば たかせ 門司港レトロ店」がおすすめです。海峡プラザ西館2階にあり、海を眺めながら瓦そばを味わえます。﻿
+
+</p>
+
+<p style="text-align: center; margin-top: 40px;">
+  <a href="file:///C:/Users/7thhe/OneDrive/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/main_home.html" style="
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+  ">🏠 ホームに戻る</a>
+</p>
+
+</body>
+</html>
