@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>敦賀港</title>
+</head>
+<style type="text/css">
+h1 {
+  padding: 0.5em;/*文字周りの余白*/
+  color: #010101;/*文字色*/
+  background: #eaf3ff;/*背景色*/
+  border-bottom: solid 3px #516ab6;/*下線*/
+  text-align: center;
+}    
+h2 {
+  padding: 0.4em 0.5em;/*文字の上下 左右の余白*/
+  color: #333; /* 濃いグレーに変更 */
+  background: #f4f4f4;/*背景色*/
+  border-left: solid 5px #7db4e6;/*左線*/
+  border-bottom: solid 3px #d7d7d7;/*下線*/
+  font-weight: bold;
+}
+h3 {
+  position: relative;
+  background: #eff4ff;
+  padding: 10px 10px 10px 60px;  /* 左に十分なスペースを確保 */
+  font-size: 20px;
+  color: #474747;
+  border-radius: 0 10px 10px 0;
+  overflow: hidden; /* はみ出し防止 */
+  margin: 10px 0;    /* 見た目調整 */
+}
+
+h3:before {
+  content: "✔";  /* チェックマークアイコン（Unicode） */
+  display: inline-block;
+  position: absolute;
+  left: 10px;   /* h3内に収まるよう左端から10px */
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  background: #81a1e4;
+  font-weight: bold;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.29);
+  border-bottom: solid 2px #4967b4;
+  font-size: 20px;
+}
+p {
+  font-size: 1.5em;       /* 通常より少し大きめの文字サイズ */
+  line-height: 2.0;       /* 行間を広めにする（1.6〜1.8くらいがおすすめ） */
+  margin-bottom: 1em;     /* 下の余白も確保（必要に応じて） */ 
+}
+ul {
+  font-size: 1.5em;       /* 通常より少し大きめの文字サイズ */
+  line-height: 2.0;       /* 行間を広めにする（1.6〜1.8くらいがおすすめ） */
+  margin-bottom: 1em;     /* 下の余白も確保（必要に応じて） */
+}
+.table-container {
+  border-collapse: collapse;
+  width: 95%;
+  max-width: 800px;
+  margin: 30px auto;
+}
+.table-container  th,
+.table-container  td {
+  border: 2px solid #fff;
+  background-color: #f1f7ff;
+  padding: 1em;
+}
+.table-container thead th {
+  background-color: #347ab7;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  width: 20%;
+  min-width: 4em;
+}
+img {
+  display: block;            /* インラインからブロックに変更して中央揃えを可能に */
+  margin: 20px auto;         /* 左右中央揃え。上下に20pxの余白 */
+  max-width: 50%;            /* 画面サイズに応じて縮小される */
+  height: auto;              /* アスペクト比を保ったまま高さを自動調整 */
+  border-radius: 8px;        /* 角を少し丸めて見栄えよく（任意） */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* 軽い影をつける（任意） */
+}
+.bg_pattern {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fffff;
+  opacity: 0.4;
+  z-index: -1;
+}
+.Polka_v2 {
+  background-image:  radial-gradient(#ffc107 2px, transparent 2px), radial-gradient(#ffc107 2px, #ffffff 2px);
+  background-size: 40px 40px;
+  background-position: 0 0,20px 20px;
+}
+/*=============
+base
+==============*/
+</style>
+<body>
+  <div class="bg_pattern Polka_v2"></div>   
+  <h1>敦賀港</h1>
+
+  <img src="https://github.com/sakufff/website/blob/main/home/tsuruga_home.jpeg?raw=true" alt="敦賀港の画像">
+
+  <p>
+    古くから北前船や大陸との交流拠点として栄えた港。日本海側で初めて国際貿易港に指定され、大陸と本州を結ぶ玄関口として重要な役割を果たしてきました。<br>
+    また、鉄道との連携により陸海交通の要衝となり、戦前には欧亜連絡の起点として知られていました。
+  </p>
+
+  <h2>現在の敦賀</h2>
+  <img src="https://github.com/sakufff/website/blob/main/tsuruga/tsuruga.jpg?raw=true" alt="現在の敦賀の画像">
+
+  <p>
+    現在も、日本海側における物流・国際交流の拠点として発展を続けています。敦賀港はフェリーやコンテナ船が発着し、北陸・関西・北海道を結ぶ交通ハブとして活躍中です。<br>
+    一方で、戦後に花開いた平和都市としての側面もあり、ユダヤ人難民の受け入れやシベリア引揚者の上陸港としての歴史も伝えられています。鉄道と港をつなぐ都市景観や、再整備された金ヶ崎緑地エリアなど、観光面でも注目が集まっています。
+  </p>
+
+  <h2>敦賀の歴史</h2>
+  <div class="table-container">
+  <table border="1">
+    <tr><th>年代</th><th>出来事</th></tr>
+    <tr><td>奈良〜江戸時代</td><td>北陸道・北前船の中継地として栄える</td></tr>
+    <tr><td>1899年</td><td>国際貿易港に指定</td></tr>
+    <tr><td>1902年</td><td>欧亜国際連絡列車運行開始（新橋～ウラジオストク）</td></tr>
+    <tr><td>1940年</td><td>ユダヤ人難民が「命のビザ」で上陸</td></tr>
+    <tr><td>1945年</td><td>敦賀港、シベリア引揚者の上陸港としても活躍</td></tr>
+    <tr><td>1951年</td><td>貿易港として再登録、以後整備が進む</td></tr>
+    <tr><td>現在</td><td>国際物流・フェリー拠点、観光・平和学習のまち</td></tr>
+  </table>
+  </div>
+
+  <h2>敦賀ゆかりの船・交通</h2>
+  <p>
+    敦賀では軍港ではなく、貿易・連絡・避難のための港湾機能が中心でした。<br>
+    特に「シベリア鉄道連絡ルート」としての機能や、「命のビザ」で来日したユダヤ人難民の歴史は世界的にも注目されています。
+  </p>
+
+  <img src="https://github.com/sakufff/website/blob/main/tsuruga/ship.jpg?raw=true" alt="敦賀ゆかりの船の画像">
+
+  <ul>
+    <li>代表的な航路・連絡船
+      <ul>
+        <li>欧亜連絡ルート：敦賀～ウラジオストク</li>
+        <li>敦賀～小樽～苫小牧 フェリー航路</li>
+        <li>戦前の定期船：敦賀丸・橿原丸など</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>見どころ</h2>
+
+  <h3>① 人道の港 敦賀ムゼウム</h3>
+  <img src="https://github.com/sakufff/website/blob/main/tsuruga/museum.jpg?raw=true" alt="ムゼウムの画像">
+  <p>
+    杉原千畝の「命のビザ」により敦賀に上陸したユダヤ人難民の歴史を伝える資料館。国際的な人道都市・敦賀を象徴する施設です。
+  </p>
+
+  <h3>② 金ヶ崎緑地・赤レンガ倉庫</h3>
+  <img src="https://github.com/sakufff/website/blob/main/tsuruga/kanegasaki.jpg?raw=true" alt="金ヶ崎緑地の画像">
+  <p>
+    敦賀港の歴史を伝えるエリアで、明治時代のレンガ倉庫がカフェや展示館として整備されています。港を望む散策スポットとして人気です。
+  </p>
+
+  <h3>③ 敦賀鉄道資料館</h3>
+  <img src="https://github.com/sakufff/website/blob/main/tsuruga/railway.jpg?raw=true" alt="鉄道資料館の画像">
+  <p>
+    日本で初めての鉄道と港の接続をテーマにした博物館。SL展示や昔の駅舎模型などが楽しめます。
+  </p>
+
+  <h3>④ 気比神宮</h3>
+  <img src="https://github.com/sakufff/website/blob/main/tsuruga/kehi.jpg?raw=true" alt="気比神宮の画像">
+  <p>
+    北陸最大級の神社。朱塗りの大鳥居は日本三大鳥居のひとつに数えられています。歴史ファンの観光地としても人気。
+  </p>
+
+  <h2>有名グルメ</h2>
+  <h3>① 敦賀ラーメン</h3>
+  <img src="https://github.com/sakufff/website/blob/main/tsuruga/ramen.jpg?raw=true" alt="敦賀ラーメンの画像">
+
+  <h3>② 焼き鯖寿司</h3>
+  <img src="https://github.com/sakufff/website/blob/main/tsuruga/sabasushi.jpg?raw=true" alt="焼き鯖寿司の画像">
+
+  <h3>③ 越前がに（冬季）</h3>
+  <img src="https://github.com/sakufff/website/blob/main/tsuruga/echizengani.jpg?raw=true" alt="越前がにの画像">
+
+  <p style="text-align: center; margin-top: 40px;">
+  <a href="file:///C:/Users/7thhe/OneDrive/%E3%83%89%E3%82%AD%E3%83%A5%E3%83%A1%E3%83%B3%E3%83%88/main_home.html" style="
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+  ">🏠 ホームに戻る</a>
+</p>
+</body>
+</html>
